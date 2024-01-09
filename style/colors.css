@@ -1,0 +1,73 @@
+:root{
+
+	/* White */
+    --prime-invert005: #FFFFFF1A;
+    --prime-invert100:#FFF;
+    --prime-invert200:#F2F2F2;
+    --prime-invert300:#F2F2F2;
+    --prime-invert400:#E6E6E6;
+
+    /* Black */
+    --prime-005: #0000000D;
+    --prime100:#000;
+
+    --prime300:#333;
+    
+    --prime500:#666666;
+
+
+
+    /* Accent */
+    --accent100:#3CAC6F;
+    --accent200:#359762;
+
+}
+
+
+.prime100{
+    color: var(--prime100) !important;
+}
+
+.prime300{
+    color:var(--prime-300) !important;
+}
+
+.prime500{
+    color: var(--prime500) !important;
+}
+
+.accent100{
+    color: var(--accent100);
+}
+
+.prime-invert100{
+    color: var(--prime-invert100);
+}
+
+.prime-invert200{
+    color: var(--prime-invert200);
+}
+
+.bg-prime500{
+    background-color: var(--prime500);
+}
+
+.bg-prime-inv100{
+    background-color: var(--prime-invert100);
+}
+
+.bg-prime-inv300{
+    background-color: var(--prime-invert300);
+}
+
+.bg-accent100{
+    color: var(--prime-invert100);
+    background-color: var(--accent100);
+    transition: 0.15s ease-in-out;
+}
+
+.bg-accent100:hover{
+    background-color: var(--accent200);
+    transition: 0.15s ease-in-out;
+}
+

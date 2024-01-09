@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="name">name</title>
+
+    <!--Styles-->
+    <link rel="stylesheet" href="style/reset.css"/>
+    <link rel="stylesheet" href="style/colors.css"/>
+    <link rel="stylesheet" href="style/fonts.css"/>
+    <link rel="stylesheet" href="style/index.css"/>
+    <link rel="stylesheet" href="style/book.css"/>
+    <link rel="stylesheet" href="style/buttons.css"/>
+    <link rel="stylesheet" href="style/header.css"/>
+    <link rel="stylesheet" href="style/footer.css"/>
+</head>
+
+<body>
+    <!--Header-->
+    <header id="header"></header>
+    
+
+    <!--Main-->
+    <main>
+
+                <!--Book info-->
+                <div class="block book mb30">
+
+                    <!--Обложка-->
+                    <img id="cover" src="https://images.unsplash.com/photo-1641154748135-8032a61a3f80?q=80&w=2815&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="name">
+        
+                    <!-- Информация -->
+                    <span>
+                        <h2 class="bold prime100" id="name">Название книги</h2>
+                        <p class="prime100" id="desc">Информация о книге</p>
+                    </span>
+
+                    <ul>
+                        <li>
+                            <h4 class="bold prime500">Төр</h4>
+                            <p id="type" class="prime100"></p>
+                        </li>
+
+                        <li>
+                            <h4 class="bold prime500">Чыгарылган елы</h4>
+                            <p id="year" class="prime100"></p>
+                        </li>
+
+                        <li>
+                            <h4 class="bold prime500">Автор</h4>
+                            <p id="author" class="prime100"></p>
+                        </li>
+
+                        <li>
+                            <h4 class="bold prime500">Яшь рейтингы</h4>
+                            <p id="rating" class="prime100"></p>
+                        </li>
+
+                    </ul>
+        
+                
+                </div>
+
+                <!--Переводчики-->
+                <!--div class="block mb30">
+                    
+                    <h3 class="bold prime100">Переводчики</h3>
+                    <ul id="translators"></ul>
+                </div-->
+
+
+                <!--Episodes-->
+                <ul id="episodes" class="episodes mb30"></ul>
+
+        
+
+    </main>
+
+    <!--Footer-->
+    <footer id="footer"></footer>
+
+    <!--header/footer-script-->
+    <script src="js/comps.js"></script>
+
+    <!--book.js-->
+    <script src="js/book.js"></script>
+
+</body>
+
+
+</html>
