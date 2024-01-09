@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap');
+
+h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 70px; /* 107.692% */
+    letter-spacing: -1.3px;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px; /* 112.5% */
+    overflow: hidden;
+}
+
+h3{
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    overflow: hidden;
+}
+
+h4{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px; /* 125% */
+}
+
+h5{
+    font-family: 'Inter', sans-serif;
+}
+
+h6{
+    font-family: 'Inter', sans-serif;
+}
+
+p{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    overflow: hidden;
+}
+
+footer p{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+}
+
+.episodes a{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+}
+
+.size-m{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+}
+
+.center{
+    text-align: center;
+}
+
+@media (max-width: 744px){
+    footer p{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 430px){
+    main{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    h1{
+        font-size: 48px;
+        line-height: 40px;
+    }
+
+    h2{
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    h3{
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+.bold{
+    font-weight: 700;
+}

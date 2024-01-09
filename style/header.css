@@ -1,0 +1,57 @@
+header{
+    background: none;
+
+    position: absolute;
+    top: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+
+    width: 100%;
+    max-width: 1240px;
+    height: 50px;
+
+    display: flex;
+    padding: 20px 0px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    box-sizing: border-box;
+    overflow: hidden
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.logo{
+    width: auto;
+    height: 20px;
+}
+
+#menu{
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1250px){
+    header{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media (max-width: 744px){
+    header ul{
+        display: none;
+    }
+
+    #menu{
+        display: block;
+    }
+    
+}
+

@@ -1,36 +1,188 @@
 <!DOCTYPE html>
-<html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Татманга</title>
+    <title id="cityTitle">Татманга</title>
 
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/fonts.css" rel="stylesheet">
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-
+    <!--Styles-->
+    <link rel="stylesheet" href="style/reset.css"/>
+    <link rel="stylesheet" href="style/colors.css"/>
+    <link rel="stylesheet" href="style/fonts.css"/>
+    <link rel="stylesheet" href="style/index.css"/>
+    <link rel="stylesheet" href="style/library.css"/>
+    <link rel="stylesheet" href="style/buttons.css"/>
+    <link rel="stylesheet" href="style/header.css"/>
+    <link rel="stylesheet" href="style/footer.css"/>
 </head>
 
 <body>
+    <!--Header-->
+    <header id="header"></header>
 
-    <!--Heading-->
-    <heading>
-        <span class="hstack">
-            <h1 class="bold black">Татманга</h1>
 
-            <!--Right icon-->
-            <button id="profile" class="two-icons">
-                <img src="src/user.svg" alt="profile">
-                <img src="src/burger.svg" alt="burger">
-            </button>
+    <!--Main-->
+    <main>
+    
+    <!--Приветствие-->
+    <div class="hstack mt30 mb100">
+        <span>
+            <h1 class="bold prime100">Привет,<br>Это Татманга</h1>
+            <h3 class="prime200">Сайт, где собрана манга на татарском языке</h3>
         </span>
+
+        <span>
+            <h1 class="bold prime100">Сәлам,<br>бу Татманга</h1>
+            <h3 class="prime200">Татар телендә манга тупланган сайт</h3>
+        </span>
+    </div>
+
+    <!--Библиотека-->
+    <div class="block libr bg-prime-inv100">
+        <span class="hstack_important">
+            <h3>Библиотека</h3>
+            <h3>Китапханә</h3>
+        </span>
+        <div id="library"></div>
+    </div>
+
+    <div class="spacer50"></div>
+
+    <!--Поддержка-->
+    <div id="support">
+        <span class="hstack supporthead">
+            <span>
+                <h2 class="bold prime100">Матди ярдәм</h2>
+                <h2 class="bold prime100">Материальная помощь</h2>
+            </span>
+            <img class="hands" src="src/hands.png" alt="hands">
+        </span>
+
+        <div class="block bg-accent100">
+            <span class="hstack">
+                <span class="bankcard bg-prime-inv100">
+                    <img src="src/icon/sber.png" alt="sberbank logo">
+                    <h2 class="bold accent100">2202 2061 7846 4108</h2> 
+                </span>
+
+                <span class="hstack mb30">
+                    <p>Можете поддержать нас материально. Деньги пойдут на бонусы переводчикам, возможную печатную версию и другие проекты</p>
+                    <hr class="hrv bg-prime-inv100">
+                    <p>Безгә матди яктан ярдәм итә аласыз. Акча тәрҗемәчеләргә бонуслар, мөмкин булган басма версия һәм башка проектларга китәчәк</p>
+                </span>
+            </span>
+
+
+        </div>
+
+    </div>
+
+    <div class="spacer100"></div>
+
+    <!--Помощь-->
+    <div id="helpers">
+        <span class="hstack mb30">
+            <h2 class="bold prime100">Думали о переводе манги на татарский, но не знаете, с чего начать?</h2>
+            <h2 class="bold prime100">Манганы тәрҗемә итү турында уйлыйсыз, ләкин башлый алмыйсыз?</h2>
+        </span>
+
+        <div class="block bg-prime-inv100">
+            <span class="hstack">
+
+
+                <span>
+                    <h3 class="bold prime100 center">Вступайте в команду перевода</h3>
+
+
+                    <!--cards-->
+                    <div class="cardsgrid mt20">
+                        <!--card-->
+                        <div class="card bg-prime-inv300">
+                            <img src="src/letter.svg" alt="letter">
+                            <p class="bold prime200">Переводчик</p>
+                            <p class="prime200">Переводит мангу на татарский</p>
+                        </div>
+
+                        <!--card-->
+                        <div class="card bg-prime-inv300">
+                            <img src="src/broom.svg" alt="letter">
+                            <p class="bold prime200">Клинер</p>
+                            <p class="prime200">Очищает страницы от текста</p>
+                        </div>
+
+                        <!--card-->
+                        <div class="card bg-prime-inv300">
+                            <img src="src/pencil.svg" alt="letter">
+                            <p class="bold prime200">Тайпер</p>
+                            <p class="prime200">Вставляет текст на страницы</p>
+                        </div>
+                    </div>
+                </span>
+                
+                <hr class="hrv bg-prime500">
+
+                <span>
+                    <h3  class="bold prime100 center">Тәрҗемә командасына керегез</h3>
+
+                                        <!--cards-->
+                                        <div class="cardsgrid mt20">
+                                            <!--card-->
+                                            <div class="card bg-prime-inv300">
+                                                <img src="src/letter.svg" alt="letter">
+                                                <p class="bold prime200">Тәрҗемәще</p>
+                                                <p class="prime200">Манганы тәрҗемә итә</p>
+                                            </div>
+                    
+                                            <!--card-->
+                                            <div class="card bg-prime-inv300">
+                                                <img src="src/broom.svg" alt="letter">
+                                                <p class="bold prime200">Клинер</p>
+                                                <p class="prime200">Тексттан битләрне чистартучы</p>
+                                            </div>
+                    
+                                            <!--card-->
+                                            <div class="card bg-prime-inv300">
+                                                <img src="src/pencil.svg" alt="letter">
+                                                <p class="bold prime200">Тайпер</p>
+                                                <p class="prime200">Битләргә текст кертүче</p>
+                                            </div>
+                                        </div>
+                </span>
+
+            </span>
+
+            <span class="hstack utmhelp">
+                <span class="vstack">
+                    <span>
+                        <h2 class="bold prime100">Если вы что-то не знаете, обучим</h2>
+                        <h2 class="bold prime100">Белмәсәгез , без өйрәтәбез</h2>
+                    </span>
+                    
+                    <span>
+                        <a class="size-m bg-accent100" href="https://t.me/PelGodEnvoy" target="_blank">Хочу участовать | Катнашырга телим</a>
+                    </span>
+                </span>
+    
+                <img src="src/girl.svg" alt="girl">
+            </span>
+        </div>
+
         
+    </div>
         
+
+    </main>
+
+    <!--Footer-->
+    <footer id="footer"></footer>
+
+    <!--header/footer-script-->
+    <script src="js/comps.js"></script>
+
+    <!--books-script-->
+    <script src="js/library.js"></script>
+
+     
+</body>
+
 
 </html>
