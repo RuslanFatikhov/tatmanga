@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="name">name</title>
+    <title id="cityTitle">Татманга</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="style/colors.css"/>
     <link rel="stylesheet" href="style/fonts.css"/>
     <link rel="stylesheet" href="style/index.css"/>
-    <link rel="stylesheet" href="style/book.css"/>
+    <link rel="stylesheet" href="style/banner.css"/>
+    <link rel="stylesheet" href="style/support.css"/>
     <link rel="stylesheet" href="style/buttons.css"/>
     <link rel="stylesheet" href="style/header.css"/>
     <link rel="stylesheet" href="style/footer.css"/>
@@ -42,75 +43,40 @@
 </head>
 
 <body class="bg-prime-inv200">
-    <!--Header-->
-    <header id="header"></header>
     
+    <!--Header-->
+    <header class="dark" id="header"></header>
 
     <!--Main-->
     <main>
 
-                <!--Book info-->
-                <div class="block book mb30">
+        <!--cover-->
+        <div class="cover hstack mt40">
+            <h1 class="prime200 bold">Материальная<br>помощь</h1>
+            <img src="src//content/coins.png" alt="coins">
+        </div>
 
-                    <!--Обложка-->
-                    <img id="cover" src="https://htmlcolorcodes.com/assets/images/colors/dark-gray-color-solid-background-1920x1080.png" alt="name">
-        
-                    <!-- Информация -->
-                    <span>
-                        <h2 class="bold prime100" id="name">Название книги</h2>
-                        <p class="prime100" id="desc">Информация о книге</p>
-                    </span>
-
-                    <ul>
-                        <li>
-                            <h4 class="bold prime500">Төр</h4>
-                            <p id="type" class="prime100"></p>
-                        </li>
-
-                        <li>
-                            <h4 class="bold prime500">Чыгарылган елы</h4>
-                            <p id="year" class="prime100"></p>
-                        </li>
-
-                        <li>
-                            <h4 class="bold prime500">Автор</h4>
-                            <p id="author" class="prime100"></p>
-                        </li>
-
-                        <li>
-                            <h4 class="bold prime500">Яшь рейтингы</h4>
-                            <p id="rating" class="prime100"></p>
-                        </li>
-
-                    </ul>
-        
+        <!--donate-->
+        <div class="donate bg-accent200">
+            <div class="bg-prime-inv100 sberbank">
+                <img src="src/icon/sber.png" alt="sber">
+                <h2 class="bold accent100">2202 2061 7846 4108</h2>
                 
-                </div>
+            </div>
 
-                <!--Переводчики-->
-                <!--div class="block mb30">
-                    
-                    <h3 class="bold prime100">Переводчики</h3>
-                    <ul id="translators"></ul>
-                </div-->
-
-
-                <!--Episodes-->
-                <ul id="episodes" class="episodes mb30"></ul>
-
-        
+            <h3 class="prime-invert100">Деньги пойдут на бонусы переводчикам,<br>возможную печатную версию и другие проекты</h3>
+        </div>
 
     </main>
 
     <!--Footer-->
-    <footer id="footer"></footer>
+    <footer class="mt100" id="footer"></footer>
+
 
     <!--header/footer-script-->
     <script src="js/comps.js"></script>
 
-    <!--book.js-->
-    <script src="js/book.js"></script>
-
+     
 </body>
 
 

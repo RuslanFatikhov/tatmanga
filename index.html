@@ -3,177 +3,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="cityTitle">Татманга</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <link rel="manifest" href="fav/site.webmanifest">
+    <link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
 
     <!--Styles-->
     <link rel="stylesheet" href="style/reset.css"/>
     <link rel="stylesheet" href="style/colors.css"/>
     <link rel="stylesheet" href="style/fonts.css"/>
     <link rel="stylesheet" href="style/index.css"/>
+    <link rel="stylesheet" href="style/banner.css"/>
+    <link rel="stylesheet" href="style/landing.css"/>
     <link rel="stylesheet" href="style/library.css"/>
     <link rel="stylesheet" href="style/buttons.css"/>
     <link rel="stylesheet" href="style/header.css"/>
     <link rel="stylesheet" href="style/footer.css"/>
+
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();
+    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(96668400, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/96668400" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 </head>
 
-<body>
+<body class="bg-accent200">
+    
     <!--Header-->
-    <header id="header"></header>
+    <header class="light" id="header"></header>
 
 
-    <!--Main-->
     <main>
-    
-    <!--Приветствие-->
-    <div class="hstack mt30 mb100">
-        <span>
-            <h1 class="bold prime100">Привет,<br>Это Татманга</h1>
-            <h3 class="prime200">Сайт, где собрана манга на татарском языке</h3>
-        </span>
-
-        <span>
-            <h1 class="bold prime100">Сәлам,<br>бу Татманга</h1>
-            <h3 class="prime200">Татар телендә манга тупланган сайт</h3>
-        </span>
-    </div>
-
-    <!--Библиотека-->
-    <div class="block libr bg-prime-inv100">
-        <span class="hstack_important">
-            <h3>Библиотека</h3>
-            <h3>Китапханә</h3>
-        </span>
-        <div id="library"></div>
-    </div>
-
-    <div class="spacer50"></div>
-
-    <!--Поддержка-->
-    <div id="support">
-        <span class="hstack supporthead">
-            <span>
-                <h2 class="bold prime100">Матди ярдәм</h2>
-                <h2 class="bold prime100">Материальная помощь</h2>
-            </span>
-            <img class="hands" src="src/hands.png" alt="hands">
-        </span>
-
-        <div class="block bg-accent100">
-            <span class="hstack">
-                <span class="bankcard bg-prime-inv100">
-                    <img src="src/icon/sber.png" alt="sberbank logo">
-                    <h2 class="bold accent100">2202 2061 7846 4108</h2> 
-                </span>
-
-                <span class="hstack mb30">
-                    <p>Можете поддержать нас материально. Деньги пойдут на бонусы переводчикам, возможную печатную версию и другие проекты</p>
-                    <hr class="hrv bg-prime-inv100">
-                    <p>Безгә матди яктан ярдәм итә аласыз. Акча тәрҗемәчеләргә бонуслар, мөмкин булган басма версия һәм башка проектларга китәчәк</p>
-                </span>
-            </span>
-
-
+        <!--cover-->
+        <div class="cover mb100">
+            <h1 class="bold prime-invert100 center">Привет,<br>это – Татманга</h1>
+            <h3 class="prime-invert100 center">Сайт, где собрана манга на татарском языке</h3>
         </div>
 
-    </div>
+        <!--libra-->
+        <div class="libra mb20">
+            <h3 class="prim100 bold">Библиотека</h3>
 
-    <div class="spacer100"></div>
-
-    <!--Помощь-->
-    <div id="helpers">
-        <span class="hstack mb30">
-            <h2 class="bold prime100">Думали о переводе манги на татарский, но не знаете, с чего начать?</h2>
-            <h2 class="bold prime100">Манганы тәрҗемә итү турында уйлыйсыз, ләкин башлый алмыйсыз?</h2>
-        </span>
-
-        <div class="block bg-prime-inv100">
-            <span class="hstack">
-
-
-                <span>
-                    <h3 class="bold prime100 center">Вступайте в команду перевода</h3>
-
-
-                    <!--cards-->
-                    <div class="cardsgrid mt20">
-                        <!--card-->
-                        <div class="card bg-prime-inv300">
-                            <img src="src/letter.svg" alt="letter">
-                            <p class="bold prime200">Переводчик</p>
-                            <p class="prime200">Переводит мангу на татарский</p>
-                        </div>
-
-                        <!--card-->
-                        <div class="card bg-prime-inv300">
-                            <img src="src/broom.svg" alt="letter">
-                            <p class="bold prime200">Клинер</p>
-                            <p class="prime200">Очищает страницы от текста</p>
-                        </div>
-
-                        <!--card-->
-                        <div class="card bg-prime-inv300">
-                            <img src="src/pencil.svg" alt="letter">
-                            <p class="bold prime200">Тайпер</p>
-                            <p class="prime200">Вставляет текст на страницы</p>
-                        </div>
-                    </div>
-                </span>
-                
-                <hr class="hrv bg-prime500">
-
-                <span>
-                    <h3  class="bold prime100 center">Тәрҗемә командасына керегез</h3>
-
-                                        <!--cards-->
-                                        <div class="cardsgrid mt20">
-                                            <!--card-->
-                                            <div class="card bg-prime-inv300">
-                                                <img src="src/letter.svg" alt="letter">
-                                                <p class="bold prime200">Тәрҗемәще</p>
-                                                <p class="prime200">Манганы тәрҗемә итә</p>
-                                            </div>
-                    
-                                            <!--card-->
-                                            <div class="card bg-prime-inv300">
-                                                <img src="src/broom.svg" alt="letter">
-                                                <p class="bold prime200">Клинер</p>
-                                                <p class="prime200">Тексттан битләрне чистартучы</p>
-                                            </div>
-                    
-                                            <!--card-->
-                                            <div class="card bg-prime-inv300">
-                                                <img src="src/pencil.svg" alt="letter">
-                                                <p class="bold prime200">Тайпер</p>
-                                                <p class="prime200">Битләргә текст кертүче</p>
-                                            </div>
-                                        </div>
-                </span>
-
-            </span>
-
-            <span class="hstack utmhelp">
-                <span class="vstack">
-                    <span>
-                        <h2 class="bold prime100">Если вы что-то не знаете, обучим</h2>
-                        <h2 class="bold prime100">Белмәсәгез , без өйрәтәбез</h2>
-                    </span>
-                    
-                    <span>
-                        <a class="size-m bg-accent100" href="https://t.me/PelGodEnvoy" target="_blank">Хочу участовать | Катнашырга телим</a>
-                    </span>
-                </span>
-    
-                <img src="src/girl.svg" alt="girl">
-            </span>
+            <div id="library"></div>
         </div>
 
-        
-    </div>
-        
+        <div class="hstack">
 
+            <!--banner-->
+            <div class="banner bg-prime100">
+                <span>
+                    <h3 class="bold prime-invert100">Можете поддержать нас материально</h3>
+                    <p class="prime-invert100">Деньги пойдут на бонусы переводчикам, возможную печатную версию и другие проекты</p>
+
+                    <a href="donate.html" class="fill-white size-s">Поддержать</a>
+                </span>
+
+                <img src="src/content/coins.png" alt="coins">
+            </div>
+
+            <!--banner-->
+            <div class="banner bg-blue100">
+                <span>
+                    <h3 class="bold prime-invert100">Думали о переводе манги?</h3>
+                    <p class="prime-invert100">Вступайте в команду перевода</p>
+
+                    <a href="support.html" class="fill-white size-s">Вступить в команду</a>
+                </span>
+
+                <img src="src/content/girl.png" alt="girl">
+            </div>
+        </div>
     </main>
 
-    <!--Footer-->
-    <footer id="footer"></footer>
+    <footer class="mt100" id="footer"></footer>
+
+    <!--bg img-->
+    <img class="landingbg" src="src/content/uzor.svg">
 
     <!--header/footer-script-->
     <script src="js/comps.js"></script>
