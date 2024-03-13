@@ -21,7 +21,7 @@ function createBookCard(book) {
 
     // Добавляем кнопку "Читать" внутрь карточки книги
     const readButton = document.createElement('button');
-    readButton.textContent = 'Укырга';
+    readButton.textContent = 'Читать';
     readButton.classList.add('size-m', 'bg-accent100');
     readButton.addEventListener('click', () => {
         // Сохраняем данные в localStorage
