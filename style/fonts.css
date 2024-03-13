@@ -32,7 +32,7 @@ h4{
     font-family: 'Inter', sans-serif;
     font-size: 12px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 15px; /* 125% */
 }
 
@@ -69,13 +69,7 @@ footer p{
     line-height: 20px; /* 125% */
 }
 
-.size-m{
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px; /* 125% */
-}
+
 
 .center{
     text-align: center;

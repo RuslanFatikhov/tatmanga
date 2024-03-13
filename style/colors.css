@@ -21,6 +21,9 @@
     --accent100:#3CAC6F;
     --accent200:#359762;
 
+    /* Blue */
+    --blue100: #3584CC;
+
 }
 
 
@@ -48,12 +51,20 @@
     color: var(--prime-invert200);
 }
 
+.bg-prime100{
+    background-color: var(--prime100);
+}
+
 .bg-prime500{
     background-color: var(--prime500);
 }
 
 .bg-prime-inv100{
     background-color: var(--prime-invert100);
+}
+
+.bg-prime-inv200{
+    background-color: var(--prime-invert200);
 }
 
 .bg-prime-inv300{
@@ -69,5 +80,14 @@
 .bg-accent100:hover{
     background-color: var(--accent200);
     transition: 0.15s ease-in-out;
+}
+
+.bg-accent200{
+    background-color: var(--accent200);
+}
+
+
+.bg-blue100{
+    background-color: var(--blue100);
 }
 

@@ -1,38 +1,16 @@
-html{
-    background-color: var(--prime-invert100);
-    overflow-x: hidden;
-}
-
-body{
-    background-color: var(--prime-invert200);
-    border-radius: 10px;
-}
-
 main{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
 
-    margin-top: 50px;
-    padding-top: 30px;
+    margin-top: 60px;
     margin-bottom: 30px;
 
     max-width: 1240px;
     box-sizing: border-box;
 }
 
-hr{
-    width: 100%;
-    height: 1px;
-    border-radius: 100%;
-}
-
-.hrv{
-    width: 1px;
-    height: auto;
-    border-radius: 100%;
-}
 
 .block{
     padding: 20px;
@@ -45,6 +23,8 @@ hr{
     justify-content: space-between;
     gap: 20px;
 }
+
+
 
 .hstack_important{
     display: flex;
@@ -61,7 +41,13 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
+    align-items:center;
+}
+
+.spacer30{
+    width: auto;
+    height: 30px;
 }
 
 .spacer50{
@@ -91,8 +77,20 @@ hr{
     margin-bottom: 30px;
 }
 
+.mb40{
+    margin-bottom: 40px;
+}
+
+.mt10{
+    margin-top: 10px;
+}
+
 .mt20{
     margin-top: 20px;
+}
+
+.mt40{
+    margin-top: 40px;
 }
 
 .mt100{
@@ -183,8 +181,33 @@ hr{
     right: 20px;
 }
 
+.heading{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+.heading img{
+    width: 45px;
+    height: 45px;
+}
+
+
 #helpers{
     position: relative;
+}
+
+.dark .light-img{
+    display: none;
+}
+
+.light .dark-img{
+    display: none;
+}
+
+.mobile{
+    display: none !important;
 }
 
 @media (max-width: 1240px){
@@ -192,13 +215,20 @@ hr{
         padding-left: 16px;
         padding-right: 16px;
     }
+
+    main{
+        padding-left:20px;
+        padding-right: 20px;
+    }
+
+    .hstack{
+        flex-direction: column;
+    }
 }
 
 
 @media (max-width: 744px){
-    .hstack{
-        flex-direction: column;
-    }
+    
 
     .bankcard{
         flex-direction: column;
@@ -216,5 +246,9 @@ hr{
 
     .utmhelp{
         height: 580px;
+    }
+
+    .mobile{
+        display: block !important;
     }
 }

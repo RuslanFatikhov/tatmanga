@@ -11,9 +11,22 @@ a{
     transition: 0.25s ease-in-out;
 }
 
+.fill-white{
+    background-color: var(--prime-invert100);
+    padding: 7px 15px;
+    border-radius: 5px;
+    color: var(--prime100);
+    transition: 0.15s ease-in-out;
+}
+
+.fill-white:hover{
+    background-color: var(--prime-invert200);
+    transition: 0.15s ease-in-out;
+}
+
 .ghost:hover{
-    color:var(--accent100) !important;
-    transition: 0.25s ease-in-out;
+    opacity: 0.5;
+    transition: 0.15s ease-in-out;
 }
 
 .ghost-icon{
@@ -48,7 +61,39 @@ a{
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
 }
+
+.size-s{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.size-m img{
+    max-width: 28px;
+    max-height: 28px;
+    margin-right: 6px;
+}
+
+.size-s img{
+    max-width: 10px;
+    max-height: 10px;
+    margin-right: 3px;
+}
+
+.maxw{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
 
 
 @media (max-width: 744px){

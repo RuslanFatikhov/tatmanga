@@ -1,0 +1,91 @@
+.cover{
+    position: relative;
+    min-height: 300px;
+    margin-top: 100px;
+}
+
+.cover h1{
+    max-width: 870px;
+    word-wrap: break-word;
+    z-index: 1;
+}
+
+.cover img{
+    width: 100%;
+    height: 100%;
+
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+
+
+.donate{
+    padding: 20px 20px 0px 20px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.sberbank{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+
+    padding: 20px;
+    border-radius: 20px 20px 0px 0px;
+
+    width: auto;
+}
+
+.sberbank img{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+@media (max-width: 1240px){
+    .cover img{
+        position: absolute;
+
+        right: 0;
+        bottom: 0;
+
+    }
+
+    .cover h1{
+        width: calc(100vw - 35%);
+    }
+
+    .donate{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .sberbank{
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 600px){
+
+    .cover{
+        min-height: 150px;
+    }
+
+    .cover img{
+        max-width: 200px;
+        max-height:200px;
+    }
+
+    .cover h1{
+        width: 100%;
+    }
+
+    
+}

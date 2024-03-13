@@ -1,0 +1,49 @@
+.banner{
+    padding: 16px 24px 0px 24px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    position: relative;
+
+    min-height: 200px;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+
+    max-width: 194px;
+    max-height: 194px;
+    object-fit: cover;
+
+}
+
+.banner span{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1;
+}
+
+.banner a{
+    position: absolute;
+    bottom: 16px;
+}
+
+@media (max-width: 570px){
+    
+    .banner{
+        flex-direction: column;
+        position: relative;
+    }
+
+    .banner img{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+}

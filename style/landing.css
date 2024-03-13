@@ -1,0 +1,24 @@
+.landingbg{
+    top: 0;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100vw;
+    z-index: -2;
+    overflow: hidden;
+    opacity: 0.5;
+}
+
+.cover{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.libra{
+    background-color: var(--prime-invert100);
+    padding: 20px;
+    border-radius: 20px;
+}
